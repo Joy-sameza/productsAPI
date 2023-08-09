@@ -19,7 +19,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 $part = explode("/", $request);
 
-if ($part[1] != 'products' OR $part[1] != 'doc')
+if ($part[1] != 'products')
     return http_response_code(404);
 
 $id = null; 
