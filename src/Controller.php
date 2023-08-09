@@ -17,7 +17,7 @@ class Controller
         }
     }
 
-    public function processResourceNamed(string $method, string $name): void
+    private function processResourceNamed(string $method, string $name): void
     {
         $name = str_replace("%20", " ", $name);
         
